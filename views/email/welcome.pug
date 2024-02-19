@@ -1,0 +1,17 @@
+extends baseEmail 
+
+block content
+  p Hi #{firstName},
+  p Welcome to Multi Shop, we're glad to have you 🎉🙏
+  p You need to activate your account by clicking following link. This link will be expired in 10 minutes.
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  a(href=`${url}`, target='_blank') Click here to activate your account
+  p This link will be expired in 10 minutes.
+  p - Admin Team, Multi Shop
